@@ -1,0 +1,20 @@
+{
+  "name": "01-crudServiciosBackend",
+  "version": "1.0.0",
+  "description": "CRUD de servicions de programación",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["middlewares", "endpoints","controllers" ],
+  "author": "Andrea Reyes",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.22.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module"
+}
