@@ -4,7 +4,8 @@
   "description": "CRUD de servicions de programación",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "dev": "node --watch index"
   },
   "keywords": ["middlewares", "endpoints","controllers" ],
   "author": "Andrea Reyes",
