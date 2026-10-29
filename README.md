@@ -15,7 +15,7 @@ agregar los pasos
 
 # Endpoints
 
-- Crear servicios: http//localhost:3000/Api/servicios/
+- Crear servicios: http://localhost:3000/Api/servicios/
 - método: POST
 - Enviar un objeto con este formato:
 ```
