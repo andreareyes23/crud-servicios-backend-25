@@ -40,6 +40,20 @@ export const servicioBuscado = async (req, res)=> {
     res.status(200).json(servicio)
   } catch (error) {
       console.error(error)
-      res.status(500).json({ mensaje: 'Ocurrió un error al intentar listar los servicios'})
+      res.status(500).json({ mensaje: 'Ocurrió un error al intentar buscar un servicios'})
+  }
+}
+
+export const borrarServicio = async (req, res)=> {
+  try {
+    const servicioBorrado = await Servicio.findByIdAndDelete(req.params.id)
+    //Si no encontré el servicio
+    if(!servicioBorrado){
+      return res.status(404).json({mensaje: 'Servicio no encontrado'})
+    }
+    res.status(200).json({mensaje: "El servicio se borro correctamente"})
+  } catch (error) {
+      console.error(error)
+      res.status(500).json({ mensaje: 'Ocurrió un error al intentar borrar un servicio'})
   }
 }
